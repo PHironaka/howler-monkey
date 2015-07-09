@@ -902,8 +902,9 @@ a:hover {
 /* line 209, ../sass/base.scss */
 .column-3 h1 {
   text-align: center;
+  line-height: 1;
 }
-/* line 212, ../sass/base.scss */
+/* line 213, ../sass/base.scss */
 .column-3 p {
   margin: 2em auto;
   height: 100%;
@@ -913,13 +914,13 @@ a:hover {
   text-align: center;
 }
 
-/* line 222, ../sass/base.scss */
+/* line 223, ../sass/base.scss */
 a.photo {
   width: 16.6667%;
   float: left;
   text-align: center;
 }
-/* line 227, ../sass/base.scss */
+/* line 228, ../sass/base.scss */
 a.photo img {
   margin: auto;
   width: 100%;
@@ -928,16 +929,16 @@ a.photo img {
   vertical-align: middle;
 }
 
-/* line 237, ../sass/base.scss */
+/* line 238, ../sass/base.scss */
 .column-1 {
   margin: 1em 0;
 }
-/* line 239, ../sass/base.scss */
+/* line 240, ../sass/base.scss */
 .column-1 p {
   text-align: center;
   padding: 1em 12em;
 }
-/* line 243, ../sass/base.scss */
+/* line 244, ../sass/base.scss */
 .column-1 h3 {
   text-align: center;
   padding: 0em 12em;
@@ -945,7 +946,7 @@ a.photo img {
   margin: 0 0 1em;
 }
 
-/* line 251, ../sass/base.scss */
+/* line 252, ../sass/base.scss */
 h2.article-title {
   font-size: 2.7rem;
   text-transform: uppercase;
@@ -954,7 +955,7 @@ h2.article-title {
   line-height: 1.5em;
 }
 
-/* line 259, ../sass/base.scss */
+/* line 260, ../sass/base.scss */
 h2.page-title {
   font-size: 1.7rem;
   font-weight: 700;
