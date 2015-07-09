@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+         <meta name="generator" content="middleman" />
+        <%
+          title = current_page.data.title || "Howler Monkey Productions"
+          abstract = current_page.data.abstract || title
+         %>
+
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title><%= current_page.data.title || "Howler Monkey Productions" %></title>
+       <meta name="keywords" content="<%= abstract %>" />
+           <meta name="description" content="<%= abstract %>" />
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="<%= image_path "favicon.png" %>" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+<link href="/stylesheets/base.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body id="main">
+
+
+    <header>
+        <div class="wrap">
+    <nav class="navigation">
+      <a href="/" class="logo"><img src="/howler-monkey/images/Howler.jpeg" alt=""></a>
+      <ul class="menu">
+        <li>
+    	 			<a href="#">About</a>
+    	 		</li>
+           <li>
+    	 			<a href="#">Team</a>
+    	 		</li>
+
+           <li>
+    	 			<a href="">Contact</a>
+    	 		</li>
+      </ul>
+    </nav>
+  </div>
+      <div class="headergrid">
+      <iframe src="https://player.vimeo.com/video/107067761?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+
+
+
+    </header>

@@ -1,0 +1,264 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+ @import 'compass';
+ @import 'compass/reset';
+ @import 'compass/css3';
+ @import "bourbon/bourbon";
+ @import "neat/neat";
+
+ // //////////////////////
+ // CONFIG
+ // //////////////////////
+
+ $total_width: 100%;
+ $container_margin: 1%;
+ $gutter_width: 2%;
+ $max_width: 100%;
+ $color_headlines: #b7b7b7;
+ $headerFont:700;
+ $defaultFont:'Lato', sans-serif;
+ $primaryColor: #4A4A4A;
+ $font-size: 1.2em;
+ $navFont: 1.2em;
+ $float-position: left;
+ $display: inline-block;
+ $size: 100%;
+ $break-small: 460px;
+ $break-large: 1100px;
+ $visual-grid: true;
+ $visual-grid-color: #E6F6FF;
+ $visual-grid-opacity: 0.4;
+
+
+ // //////////////////////
+ // MODULE STYLES
+ // //////////////////////
+
+ @import "modules/global-styles";
+ @import "modules/header";
+ @import "modules/footer";
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: $headerFont;
+  margin: 2em 0 .5em;
+  text-align: center;
+    line-height: 1;
+}
+
+a:hover {
+  color: #66F2B2;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all .5s ease-out;
+}
+
+.wrap {
+  max-width: 62em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  padding: 0 3.55555em;
+  overflow: hidden;
+}
+
+
+.container {
+  @include outer-container;
+}
+
+.story {
+@include outer-container;
+background-color: #F7F7F7;
+   h2 {
+     font-size:2.5em;
+
+padding: 1em;
+text-align: center;
+margin: 0;
+   }
+}
+
+.items {
+@include outer-container;
+border-top: 2px solid #ccc;
+  padding: 2em 0;
+   h2 {
+     font-size:1.5em;
+     background-color: rgb(117, 142, 108);
+color: white;
+padding: 1em;
+text-align: center;
+margin: 0;
+   }
+}
+
+.team  {
+  @include span-columns(6);
+    p{
+      margin: 1.5em 0;
+    }
+
+}
+
+.list {
+  margin: 2em 0 3em;
+  border-top: 3px solid #ccc;
+}
+
+ .container-1, {
+@include outer-container;
+    h2 {
+      font-size:1.5em;
+      background-color: rgb(117, 142, 108);
+color: white;
+padding: 1em;
+text-align: center;
+margin: 0;
+    }
+ }
+
+.container-menu {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  padding: 0 3.55555em;
+  overflow: hidden;
+}
+
+ .first {
+   @include span-columns(6);
+
+   h1 {
+
+     margin: 0em auto;
+     height: 100%;
+     position: relative;
+     padding: 0 3.55555em;
+     text-align: center;
+
+   }
+    p {
+margin: 2em auto;
+height: 100%;
+position: relative;
+padding: 0 3.55555em;
+overflow: hidden;
+    }
+ }
+
+ .contact-info {
+   display: block;
+   margin: 0 auto;
+   width: 48.82117%;
+   h1 {
+
+     margin: 0em auto;
+     height: 100%;
+     position: relative;
+     padding: 0 3.55555em;
+     text-align: center;
+
+   }
+    p {
+margin: 2em auto;
+height: 100%;
+position: relative;
+padding: 0 3.55555em;
+overflow: hidden;
+    }
+ }
+
+.second-img {
+  float: left;
+  display: block;
+  margin:0 ;
+  width: 33.333%;
+  float: left;
+
+  img {
+    margin: auto;
+width: 100%;
+height: auto;
+vertical-align: middle;
+  }
+
+}
+ .column-3 {
+   @include span-columns(4);
+    h1 {
+      text-align: center;
+    }
+    p {
+margin: 2em auto;
+height: 100%;
+position: relative;
+padding: 0 1.55555em;
+overflow: hidden;
+  text-align: center;
+    }
+ }
+
+a.photo {
+  width: 16.6667%;
+  float: left;
+  text-align: center;
+
+    img {
+      margin: auto;
+width: 100%;
+max-width: 226px;
+height: auto;
+  vertical-align: middle;
+    }
+}
+
+
+.column-1 {
+margin: 1em 0;
+  p {
+    text-align: center;
+padding: 1em 12em;
+  }
+  h3 {
+    text-align: center;
+  padding: 0em 12em;
+  font-size: 1.3em;
+  margin: 0 0 1em;
+  }
+
+}
+ h2.article-title {
+ 	font-size: 2.7rem;
+ 	text-transform: uppercase;
+ 	font-weight: 700;
+ 	margin: 1.4em 0 0em;
+ 	  line-height: 1.5em;
+ }
+
+ h2.page-title {
+ 	font-size: 1.7rem;
+ 	font-weight: 700;
+ 	margin: 1.4em 0 0em;
+ 	text-align: center;
+ }
